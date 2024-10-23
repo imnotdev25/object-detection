@@ -3,13 +3,10 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-
 from starlette.middleware.cors import CORSMiddleware
 
-from app.router.ui_service import ui_router
 from app.router.ai_service import ai_router
-
-
+from app.router.ui_service import ui_router
 
 app = FastAPI()
 try: os.mkdir("static")

@@ -1,12 +1,11 @@
-from fastapi import APIRouter
-import io
-import json
 import base64
-import cv2
-import numpy as np
+import io
+
 from PIL import Image
+from fastapi import APIRouter
 from fastapi import File, UploadFile, HTTPException
 from ultralytics import YOLO
+
 from app.logger import logger
 
 ai_router = APIRouter()

@@ -1,6 +1,4 @@
-import httpx
-from fastapi import File, UploadFile, Request, APIRouter
-from fastapi.responses import JSONResponse
+from fastapi import Request, APIRouter
 from fastapi.templating import Jinja2Templates
 
 ui_router = APIRouter()
