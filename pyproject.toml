@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "object detection"
+version = "0.1.0"
+description = ""
+authors = ["imnotdev25 <85677268+imnotdev25@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.3"
+python-multipart = "^0.0.12"
+httpx = "^0.27.2"
+torch = {version = "^2.5.0+cpu", source = "pytorch-cpu"}
+torchvision = {version = "^0.20.0+cpu", source = "pytorch-cpu"}
+ultralytics = "^8.3.19"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.32.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
